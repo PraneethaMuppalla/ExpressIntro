@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/conatct-us.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header__nav">
+        <ul class="main-header__list">
+          <li class="main-header__item"><a href="/shop">Shop</a></li>
+          <li class="main-header__item">
+            <a href="/admin/add-product">Add Product</a>
+          </li>
+          <li class="main-header__item">
+            <a href="/contact-us" class="active">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <form action="/success" method="POST">
+      <fieldset>
+        <h1>Book a call</h1>
+        <p>
+          Book a call slot and our representative will call you within 1 hr of
+          selected time
+        </p>
+        <hr />
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name " required />
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required />
+        <label for="phoneNumber">Phone</label><br />
+        <input
+          required
+          type="tel"
+          id="phoneNumber"
+          pattern="[0-9]{10}"
+          title="1234567890"
+        />
+        <label for="date">Time for Call:</label><br />
+        <input required style="width: 400px" type="date" id="date" />
+        <select style="width: 380px" id="time">
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="9:00">9:00</option>
+          <option value="10:00">10:00</option>
+        </select>
+        <input
+          style="
+            background-color: #18a3a3;
+            margin: 10px 0px 10px;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            height: 40px;
+          "
+          type="submit"
+          value="Get A Call"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+fieldset {
+  border: 3px solid rgb(2, 16, 21);
+  border-radius: 10px;
+  background-color: white;
+  width: 800px;
+  padding-bottom: 20px;
+  font-family: Verdana;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+p {
+  font-size: 15px;
+  text-align: center;
+}
+label {
+  text-align: left;
+  margin-top: 18px;
+}
+input {
+  width: 800px;
+  border: 2px solid rgb(200, 200, 200);
+  height: 30px;
+  border-radius: 4px;
+  margin: 5px 0 5px;
+}
+select {
+  border: 2px solid rgb(200, 200, 200);
+  height: 35px;
+  border-radius: 4px;
+  margin: 5px 0 5px;
+}
